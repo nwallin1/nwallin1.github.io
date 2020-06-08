@@ -1,0 +1,158 @@
+#top_header {
+  margin: 5px 3vw;
+  padding: 10px 10px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: grey 1px solid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.logo_header {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 10vw;
+  margin-right: 1vw;
+  height: inherit;
+}
+
+.logo_header a, .logo_header img {
+  width: inherit;
+  height: inherit;
+}
+
+.page_header {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+  height: inherit;
+  font-family: arial, fantasy;
+  font-size: 3vw;
+  padding-right: 4vw;
+}
+
+nav {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash {
+  height: 45%;
+  border-right: grey 1px solid;
+}
+
+.dash:after {
+  content: "";
+  width: 1vw;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+}
+
+nav ul li {
+  text-align: center;
+  font-size: 2em;
+}
+
+nav ul li a, nav ul li a:active, nav ul li a:visited {
+  text-decoration: none;
+  color: burlywood;
+}
+
+nav ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.grid-container {
+  margin: 3vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [col1-start] 2fr [col2-start] 1fr;
+      grid-template-columns: [col1-start] 2fr [col2-start] 1fr;
+  -ms-grid-rows: [row1-start] 1fr [row2-start] 1fr;
+      grid-template-rows: [row1-start] 1fr [row2-start] 1fr;
+      grid-template-areas: "main side1" "main side2";
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-justify-items: center;
+}
+
+section {
+  min-height: 100px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(211, 211, 211, 0.5)), to(rgba(211, 211, 211, 0.1)));
+  background-image: linear-gradient(to left, rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.1));
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.card {
+  margin-left: 10px;
+}
+
+.card2 {
+  min-height: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(211, 211, 211, 0.5)), to(rgba(211, 211, 211, 0.1)));
+  background-image: linear-gradient(to right, rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.1));
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: side2;
+}
+
+footer {
+  min-height: 50px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50px;
+  position: fixed;
+  margin: 5px 3vw;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: grey 1px solid;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

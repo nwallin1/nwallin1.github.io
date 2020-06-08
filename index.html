@@ -3,13 +3,59 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <!-- For responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Site</title>
+        <title>Walling's</title>
+
+        <!-- Stylesheet located in styles-->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     </head>
 
     <body>
-        <p> Look at all this quality content!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
-        <!-- Add linkedin? -->
+        <!-- Start Heading -->
+        <header>
+            <!-- Start top_header, this is Flexbox -->
+            <div id="top_header">
+                <div class="logo_header">
+                    <a href="/"><img alt="Logo" src="img/logo.png"></a>
+                </div>                
+                <h1 class="page_header">Nicholas Walling</h1>
+                
+                <!-- Start Nav -->
+                <nav>
+                    <ul>
+                        <li class="dash"></li>
+                        <li><a href="/">Home</a></li>
+                        <li class="dash"></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+                <!-- End Nav -->
+            </div>
+            <!-- End top_header -->
+        </header>
+        <!-- End Heading -->
+        <!-- Start Content, this is Grid-->
+        <div class="grid-container">
+            <!-- Left Side of the Screen -->
+            <section> Look at all this quality content!</section>
+            <!-- Use the Cards for Social Media and Contact-->
+            <div class="card LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="nicholas-w-0">
+                <a class="LI-simple-link" href='https://www.linkedin.com/in/nicholas-w-0?trk=profile-badge'>Nicholas W.</a>
+            </div>
+            <div class="card card2">Card 2</div>
+
+        </div>
+        <!-- End Content -->
+
+        <footer>
+            <!-- Footer Content -->
+            <div class="footer-container">
+                <div class="info">Here's the bottom!</div>
+            </div>
+        </footer>
     </body>
 </html>

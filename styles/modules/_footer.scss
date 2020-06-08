@@ -1,0 +1,15 @@
+footer{
+    min-height: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    position: fixed;
+    margin: 5px $side_margins;
+    bottom: 0;
+    right: 0;
+    left:0;
+    border-top: grey 1px solid;
+}

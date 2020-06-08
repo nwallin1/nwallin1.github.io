@@ -1,0 +1,78 @@
+
+#top_header{
+    margin: 5px $side_margins;
+    padding: 10px 10px 0px 10px;
+    // Display Flexbox
+    display: flex;
+    border-bottom: grey 1px solid;
+    flex: {
+        // Displays from left to right in a row
+        direction: row;
+
+        //nowrap is default, all items will be on one line
+        wrap: nowrap;
+
+        //flex-flow: row nowrap; combines the above
+
+    }
+}
+.logo_header{
+    order: 1; //Logo should be first
+    width: 10vw;
+    margin-right: 1vw;
+    height: inherit;
+    a, img{ width: inherit; height: inherit;}
+}
+.page_header{
+    order: 2; //Heading is next
+    text-align: center;
+    height: inherit;
+    font: {
+        family: arial, fantasy;
+        size: 3vw;
+    }
+    padding-right: 4vw;
+    //border-right: grey 1px solid;
+}
+
+nav {
+    order: 3;
+    flex:1;
+    display: block;
+    ul {
+        margin: 0; padding:0;
+        height: 100%;   
+        list-style: none;
+        justify-content: space-evenly;
+        //Flex
+        display:flex;
+        //justify-content: space-around;
+        align-items: center;
+    }
+}
+.dash{
+    //This isn't exact yet
+    height: 45%;
+    border-right: grey 1px solid;
+    
+}
+.dash:after{
+    content: "";
+    width: 1vw;
+    height: 1px;
+    background-color: grey;
+    position:absolute;
+}
+nav ul li{
+    text-align: center;
+    font-size: 2em;
+    a, a:active, a:visited{
+        text-decoration: none;
+        color: burlywood;
+    }
+
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+}
