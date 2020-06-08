@@ -1,9 +1,14 @@
+.flag{
+    height: 50%;
+    background: yellow;
+}
 
 #top_header{
     margin: 5px $side_margins;
     padding: 10px 10px 0px 10px;
     // Display Flexbox
     display: flex;
+
     border-bottom: grey 1px solid;
     flex: {
         // Displays from left to right in a row
@@ -65,7 +70,7 @@ nav {
 }
 nav ul li{
     text-align: center;
-    font-size: 2em;
+    font-size: 2.75vw;
     a, a:active, a:visited{
         text-decoration: none;
         color: burlywood;

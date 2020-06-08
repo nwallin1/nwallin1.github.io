@@ -1,3 +1,8 @@
+.flag {
+  height: 50%;
+  background: yellow;
+}
+
 #top_header {
   margin: 5px 3vw;
   padding: 10px 10px 0px 10px;
@@ -79,7 +84,7 @@ nav ul {
 
 nav ul li {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.75vw;
 }
 
 nav ul li a, nav ul li a:active, nav ul li a:visited {
@@ -127,6 +132,15 @@ section {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: side2;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: inline-block;
+  }
+  .grid-container > .card, .grid-container > section {
+    margin: 20px;
+  }
 }
 
 footer {

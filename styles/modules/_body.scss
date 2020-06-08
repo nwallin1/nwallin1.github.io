@@ -31,10 +31,19 @@ section{
     //border: black solid 1px;
 }
 
-.card1{
-}
+//.card1{}
 .card2{
     min-height: 100px;
     background-image: linear-gradient(to right, rgba(211,211,211,.5),rgba(211,211,211,.1));
     grid-area: side2;
+}
+
+@media screen and (max-width: 600px){
+    .grid-container{
+        display: inline-block;
+    }
+    .grid-container > .card, .grid-container > section {
+        margin: 20px;
+    }
+
 }
