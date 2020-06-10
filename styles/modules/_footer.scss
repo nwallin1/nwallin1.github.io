@@ -4,6 +4,7 @@ footer{
 
 .footer-container{
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     min-height: 50px;
     position: fixed;
@@ -11,5 +12,15 @@ footer{
     bottom: 0;
     right: 0;
     left:0;
-    border-top: grey 1px solid;
+    border-top: grey 1px solid;   
+}
+
+.flag{
+    height: 50%;
+    background: yellow;
+}
+
+.footer-info{
+    width:auto;
+    align-self:center;
 }

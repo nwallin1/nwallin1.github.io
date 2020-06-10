@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- For responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+
+        <!-- Stylesheet located in styles-->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </head>
+    <body>
+        <!-- Start Heading -->
+        <header>
+            <!-- Start top_header, this is Flexbox -->
+            <div id="top_header">
+                <div class="logo_header">
+                    <a href="/"><img alt="Logo" src="img/logo.png"></a>
+                </div>                
+                <div class="page_header"><h1>Nicholas Walling<!-- <div><img src="../img/button.png"></div> --></h1></div>
+                
+                
+                <!-- Start Nav -->
+                <nav>
+                    <ul>
+                        <li class="dash"></li>
+                        <li><a href="/">Home</a></li>
+                        <li class="dash"></li>
+                        <li><a href="/about">About</a></li>
+                        <li class="dash"></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <!-- End Nav -->
+            </div>
+            <!-- End top_header -->
+        </header>
+        <!-- End Heading -->
+
+        <!-- Insert content here -->
+        {{content}}
+        <footer>
+            <!-- Footer Content -->
+            <div class="footer-container">
+                <div class="footer-info flag">This Website Is a Work in Progress</div>
+                <!-- <div class="footer-info">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+            </div>
+        </footer>
+    </body>
+</html>

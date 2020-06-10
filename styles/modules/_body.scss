@@ -5,6 +5,8 @@
     //background-image: linear-gradient(rgba(211,211,211,.4),rgba(211,211,211,.0));
     margin: $side_margins;
     display: grid;
+}
+.home{
     grid: {
         template-columns: [col1-start] 2fr [col2-start] 1fr;
         template-rows: [row1-start] 1fr [row2-start] 1fr;
@@ -16,14 +18,33 @@
         // = gap: 20px 10px;
         justify-items: center;
     }
+}
 
+.about{
+    grid: {
+        template-columns: [col1-start] 1fr [col2-start] 1fr;
+        template-row: [row1-start] 3fr [row2-start] 1fr;
+        column-gap: 10px;
+        row-gap: 20px;
+        template-areas:
+            "left-sec right-sec";
+    }
 }
 
 section{
     min-height: 100px;
     //background-color: lightgrey;
     background-image: linear-gradient(to left, rgba(211,211,211,.5),rgba(211,211,211,.1));
+}
+
+main-section{
     grid-area: main;
+}
+left-section{
+    grid-area: left-sec;
+}
+right-section{
+    grid-area: right-sec;
 }
 .card{
     margin-left: 10px;

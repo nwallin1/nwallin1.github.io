@@ -1,15 +1,10 @@
-.flag{
-    height: 50%;
-    background: yellow;
-}
-
 #top_header{
     margin: 5px $side_margins;
     padding: 10px 10px 0px 10px;
     // Display Flexbox
     display: flex;
-
     border-bottom: grey 1px solid;
+    border-top: grey 1px solid;
     flex: {
         // Displays from left to right in a row
         direction: row;
@@ -29,21 +24,30 @@
     a, img{ width: inherit; height: inherit;}
 }
 .page_header{
-    order: 2; //Heading is next
-    text-align: center;
+    order: 2;
     height: inherit;
-    font: {
-        family: arial, fantasy;
-        size: 3vw;
+    h1{
+        //border-top: 1px solid black;
+        font: {
+            text-align: center;
+            family: arial, fantasy;
+            size: 3vw;
+        }
     }
-    padding-right: 4vw;
-    //border-right: grey 1px solid;
+
+    img{
+        width: 3vw;
+        height: inherit;
+        position: relative;
+        top: 2.5px;
+    }
 }
 
 nav {
     order: 3;
     flex:1;
     display: block;
+    height: inherit;
     ul {
         margin: 0; padding:0;
         height: 100%;   
@@ -68,6 +72,7 @@ nav {
     background-color: grey;
     position:absolute;
 }
+
 nav ul li{
     text-align: center;
     font-size: 2.75vw;
