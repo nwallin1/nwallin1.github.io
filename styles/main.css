@@ -1,11 +1,11 @@
 #top_header {
-  margin: 5px 3vw;
+  margin: 15px 3vw 0 3vw;
   padding: 10px 10px 0px 10px;
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: grey 1px solid;
-  border-top: grey 1px solid;
+  border-bottom: black 1px solid;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -15,46 +15,20 @@
 }
 
 .logo_header {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  width: 10vw;
-  margin-right: 1vw;
-  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo_header a, .logo_header img {
-  width: inherit;
-  height: inherit;
-}
-
-.page_header {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  height: inherit;
-}
-
-.page_header h1 {
-  font-text-align: center;
-  font-family: arial, fantasy;
-  font-size: 3vw;
-}
-
-.page_header img {
+.logo_header img {
   width: 3vw;
   height: inherit;
-  position: relative;
-  top: 2.5px;
 }
 
 nav {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: block;
   height: inherit;
 }
@@ -64,9 +38,6 @@ nav ul {
   padding: 0;
   height: 100%;
   list-style: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +61,8 @@ nav ul {
 
 nav ul li {
   text-align: center;
-  font-size: 2.75vw;
+  font-size: 2vw;
+  margin-left: 20px;
 }
 
 nav ul li a, nav ul li a:active, nav ul li a:visited {
@@ -104,7 +76,8 @@ nav ul li a:hover {
 }
 
 .grid-container {
-  margin: 3vw;
+  margin: 0 3vw;
+  padding: 3vw 0;
   display: -ms-grid;
   display: grid;
 }
@@ -177,7 +150,7 @@ right-section {
 }
 
 footer {
-  min-height: 50px;
+  min-height: 55px;
 }
 
 .footer-container {
@@ -197,7 +170,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  border-top: grey 1px solid;
+  border-top: black 1px solid;
 }
 
 .flag {

@@ -1,10 +1,11 @@
 #top_header{
-    margin: 5px $side_margins;
+    margin: 15px $side_margins 0 $side_margins;
     padding: 10px 10px 0px 10px;
+    min-height: 50px;
     // Display Flexbox
     display: flex;
-    border-bottom: grey 1px solid;
-    border-top: grey 1px solid;
+    border-bottom: black 1px solid;
+    //border-top: black 1px solid;
     flex: {
         // Displays from left to right in a row
         direction: row;
@@ -17,46 +18,50 @@
     }
 }
 .logo_header{
-    order: 1; //Logo should be first
-    width: 10vw;
-    margin-right: 1vw;
-    height: inherit;
-    a, img{ width: inherit; height: inherit;}
-}
-.page_header{
-    order: 2;
-    height: inherit;
-    h1{
-        //border-top: 1px solid black;
-        font: {
-            text-align: center;
-            family: arial, fantasy;
-            size: 3vw;
-        }
-    }
-
+    // order: 1; //Logo should be first
+    // width: 10vw;
+    // margin-right: 1vw;
+    // height: inherit;
+    // a, img{ width: inherit; height: inherit;}
+    justify-content: center;
     img{
         width: 3vw;
         height: inherit;
-        position: relative;
-        top: 2.5px;
     }
 }
 
+// .page_header{
+//     order: 2;
+//     height: inherit;
+//     h1{
+//         //border-top: 1px solid black;
+//         font: {
+//             text-align: center;
+//             family: arial, fantasy;
+//             size: 3vw;
+//         }
+//     }
+
+//     img{
+//         width: 3vw;
+//         height: inherit;
+//         position: relative;
+//         top: 2.5px;
+//     }
+// }
+
 nav {
     order: 3;
-    flex:1;
     display: block;
     height: inherit;
     ul {
         margin: 0; padding:0;
         height: 100%;   
         list-style: none;
-        justify-content: space-evenly;
         //Flex
         display:flex;
-        //justify-content: space-around;
         align-items: center;
+        //justify-content: space-around;
     }
 }
 .dash{
@@ -75,7 +80,8 @@ nav {
 
 nav ul li{
     text-align: center;
-    font-size: 2.75vw;
+    font-size: 2vw;
+    margin-left: 20px;
     a, a:active, a:visited{
         text-decoration: none;
         color: burlywood;
