@@ -1,7 +1,6 @@
 #top_header {
   margin: 15px 3vw 0 3vw;
   padding: 10px 10px 0px 10px;
-  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,12 +76,13 @@ nav ul li a:hover {
 
 .grid-container {
   margin: 0 3vw;
-  padding: 3vw 0;
+  /*padding: $side_margins 0;*/
+  padding: 0;
   display: -ms-grid;
   display: grid;
 }
 
-.home {
+.about {
   -ms-grid-columns: [col1-start] 2fr [col2-start] 1fr;
       grid-template-columns: [col1-start] 2fr [col2-start] 1fr;
   -ms-grid-rows: [row1-start] 1fr [row2-start] 1fr;
@@ -93,7 +93,7 @@ nav ul li a:hover {
   grid-justify-items: center;
 }
 
-.about {
+.home {
   -ms-grid-columns: [col1-start] 1fr [col2-start] 1fr;
       grid-template-columns: [col1-start] 1fr [col2-start] 1fr;
   grid-template-row: [row1-start] 3fr [row2-start] 1fr;
@@ -103,7 +103,7 @@ nav ul li a:hover {
 }
 
 section {
-  min-height: 100px;
+  min-height: 400px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(211, 211, 211, 0.5)), to(rgba(211, 211, 211, 0.1)));
   background-image: linear-gradient(to left, rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.1));
 }
@@ -140,6 +140,30 @@ right-section {
   grid-area: side2;
 }
 
+.computer-img {
+  background-image: url("../../img/computer.jpg");
+  background-size: cover;
+  /* position: bottom;*/
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  position: relative;
+  height: 600px;
+}
+
+.campus-img {
+  /*image: url('../../img/towerlib.jpg');*/
+  background-image: url("../../img/towerlib.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+  position: relative;
+  height: 600px;
+}
+
 @media screen and (max-width: 600px) {
   .grid-container {
     display: inline-block;
@@ -164,9 +188,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 50px;
+  min-height: 40px;
   position: fixed;
-  margin: 5px 3vw;
+  margin: 0px 3vw;
   bottom: 0;
   right: 0;
   left: 0;
