@@ -9,16 +9,19 @@ $back-img: inherit;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 15%;
 
     h1{
         display: inline-block;
+        background: black;
+        color: white;
+        padding: 15px 3vw 0 3vw;
         margin:0;
-        padding-top:15px;
     }
 
     h2{
         display: inline-block;
+        color:white;
+        background: black;
         margin:0;
         padding: 0 3vw 15px 3vw;
     }
@@ -30,7 +33,6 @@ $back-img: inherit;
 }
 .grid-container{
     //background-image: linear-gradient(rgba(211,211,211,.4),rgba(211,211,211,.0));
-    margin: 0 $side_margins;
     /*padding: $side_margins 0;*/
     padding: 0;
     height: 75%;
@@ -52,6 +54,8 @@ $back-img: inherit;
 }
 
 .home{
+    background: black;
+    padding: 0 3vw;
     grid: {
         template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] .2fr [col4-start] 1fr [col5-start] 1fr;
         template-row: [row1-start] 3fr [row2-start] 1fr;
@@ -69,6 +73,7 @@ section{
 }
 
 .section-header{
+    color: white;
     /*background: lightgrey;*/
     h2{
         margin-top:0;
@@ -82,6 +87,7 @@ section{
 }
 
 .section-text{
+    color:white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +108,7 @@ section{
     justify-content: center;
     background-color: none;
     p{
+        color:white;
         text: {
             align: center;
         }

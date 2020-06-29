@@ -1,10 +1,13 @@
+header{
+    height: 7.5%;
+    border-bottom: burlywood 5px solid;
+}
+
 #top_header{
-    margin: 0 $side_margins;
-    padding: 10px 10px 0px 10px;
+    margin-bottom: 0;
+    padding: 5px;
     // Display Flexbox
     display: flex;
-    border-bottom: black 1px solid;
-    //border-top: black 1px solid;
     flex: {
         // Displays from left to right in a row
         direction: row;
@@ -28,26 +31,6 @@
         height: inherit;
     }
 }
-
-// .page_header{
-//     order: 2;
-//     height: inherit;
-//     h1{
-//         //border-top: 1px solid black;
-//         font: {
-//             text-align: center;
-//             family: arial, fantasy;
-//             size: 3vw;
-//         }
-//     }
-
-//     img{
-//         width: 3vw;
-//         height: inherit;
-//         position: relative;
-//         top: 2.5px;
-//     }
-// }
 
 nav {
     order: 3;
