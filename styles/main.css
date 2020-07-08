@@ -5,6 +5,9 @@
   display: -ms-flexbox;
   display: flex;
   border-bottom: black 1px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -79,6 +82,7 @@ nav ul li a:hover {
 }
 
 .block-container {
+  margin: 10px 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +122,7 @@ nav ul li a:hover {
   margin: 0 3vw;
   /*padding: $side_margins 0;*/
   padding: 0;
-  height: 75%;
+  height: 70%;
   display: -ms-grid;
   display: grid;
 }
@@ -204,14 +208,73 @@ section {
   background-color: none;
 }
 
-.mid-sec p {
+.mid-sec .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.mid-sec .spacer-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mid-sec .spacer-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mid-sec .spacer-p p {
   text-align: center;
   font-size: 5em;
   margin: 0;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+}
+
+.mid-sec .spacer-half {
+  -webkit-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
+}
+
+.mid-btn {
+  width: 250%;
+  overflow: visible;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 25%;
+  /* text-align: center;*/
+  background-color: black;
+  color: burlywood;
+  font-size: 1.2em;
+  border: 1px solid grey;
+  /*bisque  border: black 1px solid;*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mid-btn:hover {
+  border: .75px solid black;
+  background-color: #313131;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .gradient {
