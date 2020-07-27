@@ -5,7 +5,11 @@ $back-img: inherit;
     color: burlywood;
 }
 .block-container{
-    margin: 10px 0;
+    color: white;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 25vh;
     text-align:center;
     display: flex;
     justify-content: center;
@@ -31,20 +35,22 @@ $back-img: inherit;
 }
 .grid-container{
     //background-image: linear-gradient(rgba(211,211,211,.4),rgba(211,211,211,.0));
-    margin: 0 $side_margins;
+    /*margin: 0 $side_margins;*/
     /*padding: $side_margins 0;*/
     padding: 0;
     height: 70%;
     display: grid;
-    // background-color: lightslategrey;
 }
 .about{
+    background: black;
+    height: 93.4%;
     grid: {
-        template-columns: [col1-start] 2fr [col2-start] 1fr;
-        template-rows: [row1-start] 1fr [row2-start] 1fr;
+        template-columns: [col2-start] 1fr [col3-start] 1fr [col4-start] .5fr;
+        template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr;
         template-areas:
-            "main side2"
-            "main side2";
+        ". card ."
+        "card card card"
+        "card card card";
         column-gap: 10px;
         row-gap: 20px;
         // = gap: 20px 10px;
@@ -53,14 +59,26 @@ $back-img: inherit;
 }
 
 .home{
+    background:black;
+    height: 93.4%;
     grid: {
-        template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] .2fr [col4-start] 1fr [col5-start] 1fr;
+        template-columns: [col1-start] 1.25fr [col2-start] 1fr [col3-start] .2fr [col4-start] 1fr [col5-start] 1.25fr;
         template-row: [row1-start] 3fr [row2-start] 1fr;
         column-gap: 0px;
         row-gap: 20px;
         template-areas:
             "left-sec left-sec mid-sec right-sec right-sec";
     }
+}
+
+.section-header > h2 > a{
+    color: white;
+    text-decoration: none;
+}
+
+.section-header > h2> a:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 section{
@@ -115,6 +133,8 @@ section{
     }
 
     .spacer-p{
+        margin-bottom: 50%;
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -123,7 +143,7 @@ section{
                 align: center;
             }
             font: {
-                size: 5em;
+                size: 4em;
             }
             margin:0;
             position: relative;
@@ -136,6 +156,8 @@ section{
 }
 
 .mid-btn{
+    position: relative;
+    top: -10vh;
     width: 250%;
     overflow: visible;
     align-self: center;
@@ -150,8 +172,7 @@ section{
 }
 
 .mid-btn:hover{
-    border: .75px solid black;
-    background-color: #313131;
+    /*background-color: #313131;*/
     color: white;
     text-decoration: underline;
     cursor: pointer;
@@ -174,6 +195,7 @@ section{
 main-section{
     grid-area: main;
 }
+
 left-section{
     grid-area: left-sec;
 }
@@ -185,20 +207,20 @@ right-section{
     grid-area: right-sec;
 }
 .card{
-    margin-left: 10px;
-
+    /*margin-left: 10px;*/
     //border: black solid 1px;
 }
 
 //.card1{}
-.card2{
+.card-highlight{
     min-height: 100px;
     background-image: linear-gradient(to right, rgba(211,211,211,.5),rgba(211,211,211,.1));
-    grid-area: side2;
 }
 
 
 .computer-img{
+    height: 80%;
+    align-self: center;
     background: {
         image: url('../../img/computer.jpg');
         size: cover;
