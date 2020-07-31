@@ -42,16 +42,16 @@ $back-img: inherit;
     display: grid;
 }
 .about{
-    background: black;
+    background: white;
     height: 93.4%;
     grid: {
-        template-columns: [col2-start] 1fr [col3-start] 1fr [col4-start] .5fr;
+        template-columns: [col2-start] 1fr [col3-start] 1fr;
         template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr;
         template-areas:
-        ". card ."
-        "card card card"
-        "card card card";
-        column-gap: 10px;
+        "card-header card-header"
+        "card1 card2"
+        "card1 card2";
+        column-gap: 50px;
         row-gap: 20px;
         // = gap: 20px 10px;
         justify-items: center;
@@ -206,17 +206,69 @@ mid-section{
 right-section{
     grid-area: right-sec;
 }
-.card{
+.card-header{
+    grid-area: card-header;
+    background-image: linear-gradient(to bottom, black,black, rgba(255,255,255,1));
+    text-align: center;
+    font-size: large;
     /*margin-left: 10px;*/
     //border: black solid 1px;
 }
 
-//.card1{}
-.card-highlight{
-    min-height: 100px;
-    background-image: linear-gradient(to right, rgba(211,211,211,.5),rgba(211,211,211,.1));
+.card-header-text{
+    color: white;
+    background: black;
+    margin: 0;
+    padding-top: 5%;
 }
 
+.card > p{
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.card1{
+    grid-area: card1;
+    justify-self: right;
+    background: black;
+}
+.card2 {
+    grid-area: card2;
+    justify-self: left;
+    background: black;
+}
+.card3 {
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.subcard-header{
+    color: burlywood;
+    text-align: center;
+    margin: 0;
+    padding: .83em 0;
+    border-bottom: white 1px solid;
+}
+//.card1{}
+.card{
+    min-height: 100px;
+    width: 75%;
+}
+
+.BU{
+    color: darkgreen;
+}
+
+.bottom-gradient{
+    min-height:  75px;
+    background-image: linear-gradient(to top, grey, white);
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
 
 .computer-img{
     height: 80%;

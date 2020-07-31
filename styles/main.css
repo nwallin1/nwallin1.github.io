@@ -138,14 +138,14 @@ nav ul li a:hover {
 }
 
 .about {
-  background: black;
+  background: white;
   height: 93.4%;
-  -ms-grid-columns: [col2-start] 1fr [col3-start] 1fr [col4-start] 0.5fr;
-      grid-template-columns: [col2-start] 1fr [col3-start] 1fr [col4-start] 0.5fr;
+  -ms-grid-columns: [col2-start] 1fr [col3-start] 1fr;
+      grid-template-columns: [col2-start] 1fr [col3-start] 1fr;
   -ms-grid-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr;
       grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr;
-      grid-template-areas: ". card ." "card card card" "card card card";
-  grid-column-gap: 10px;
+      grid-template-areas: "card-header card-header" "card1 card2" "card1 card2";
+  grid-column-gap: 50px;
   grid-row-gap: 20px;
   grid-justify-items: center;
 }
@@ -342,14 +342,87 @@ right-section {
   grid-area: right-sec;
 }
 
-.card {
+.card-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card-header;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(black), to(white));
+  background-image: linear-gradient(to bottom, black, black, white);
+  text-align: center;
+  font-size: large;
   /*margin-left: 10px;*/
 }
 
-.card-highlight {
+.card-header-text {
+  color: white;
+  background: black;
+  margin: 0;
+  padding-top: 5%;
+}
+
+.card > p {
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.card1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: card1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  background: black;
+}
+
+.card2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: card2;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  background: black;
+}
+
+.card3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 200px;
+}
+
+.subcard-header {
+  color: burlywood;
+  text-align: center;
+  margin: 0;
+  padding: .83em 0;
+  border-bottom: white 1px solid;
+}
+
+.card {
   min-height: 100px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(211, 211, 211, 0.5)), to(rgba(211, 211, 211, 0.1)));
-  background-image: linear-gradient(to right, rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.1));
+  width: 75%;
+}
+
+.BU {
+  color: darkgreen;
+}
+
+.bottom-gradient {
+  min-height: 75px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(grey), to(white));
+  background-image: linear-gradient(to top, grey, white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .computer-img {
